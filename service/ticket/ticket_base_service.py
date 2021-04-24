@@ -1540,7 +1540,7 @@ class TicketBaseService(BaseService):
             return False, state_obj
 
         if state_obj.type_id == constant_service_ins.STATE_TYPE_END:
-            ticket_obj.act_state_id = constant_service_ins.TICKET_ACT_STATE_CLOSED:
+            ticket_obj.act_state_id = constant_service_ins.TICKET_ACT_STATE_CLOSED
         if state_obj.type_id == constant_service_ins.STATE_TYPE_START:
             ticket_obj.act_state_id = constant_service_ins.TICKET_ACT_STATE_DRAFT
             
